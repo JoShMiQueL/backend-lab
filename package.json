@@ -1,0 +1,13 @@
+{
+  "name": "backend-lab",
+  "type": "module",
+  "workspaces": [
+    "projects/*"
+  ],
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
