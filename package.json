@@ -1,13 +1,17 @@
 {
   "name": "backend-lab",
   "type": "module",
-  "workspaces": [
-    "projects/*"
-  ],
+  "workspaces": ["projects/*"],
+  "scripts": {
+    "biome:check": "biome check --write"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@biomejs/biome": "1.9.4",
+    "@types/bun": "1.1.17",
+    "lefthook": "1.10.8"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
-  }
+    "typescript": "5.7.3"
+  },
+  "trustedDependencies": ["@biomejs/biome", "lefthook"]
 }
